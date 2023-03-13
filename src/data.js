@@ -42,7 +42,7 @@ export const data = {
     footer:{
         logoImgDark: './images/logo-dark.svg',
         fbImage:'./images/icon-facebook.svg',
-        fbInsta:'.images/icon-instagram.svg',
+        fbInsta:'./images/icon-instagram.svg',
         fbTwitter:'./images/icon-twitter.svg',
     } 
 
