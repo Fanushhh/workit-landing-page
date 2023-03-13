@@ -7,9 +7,9 @@ export const data = {
         heroHeading:`Data tailored to your needs.`,
         heroButton:`Learn more`,
         heroImg:`./images/image-hero.webp`,
-        bgPattern1: `dist/images/bg-pattern-1.svg`,      
-        bgPattern2: `dist/images/bg-pattern-2.svg`,      
-        bgPattern3: `dist/images/bg-pattern-3.svg`      
+        bgPattern1: `./images/bg-pattern-1.svg`,      
+        bgPattern2: `./images/bg-pattern-2.svg`,      
+        bgPattern3: `./images/bg-pattern-3.svg`      
     },
     perks:[
         {   
