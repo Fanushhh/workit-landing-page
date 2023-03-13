@@ -1,12 +1,12 @@
 export const data = {
     navbar:{
-        logoImg:'dist/images/logo-light.svg',
+        logoImg:'./images/logo-light.svg',
         button:`Apply for access`
     },
     hero:{
         heroHeading:`Data tailored to your needs.`,
         heroButton:`Learn more`,
-        heroImg:`dist/images/image-hero.webp`,
+        heroImg:`./images/image-hero.webp`,
         bgPattern1: `dist/images/bg-pattern-1.svg`,      
         bgPattern2: `dist/images/bg-pattern-2.svg`,      
         bgPattern3: `dist/images/bg-pattern-3.svg`      
@@ -32,7 +32,7 @@ export const data = {
         }
     ],
     cta:{
-        founderImg:'dist/images/image-founder.webp',
+        founderImg:'./images/image-founder.webp',
         ctaTitle:`Be the first to test`,
         ctaDescription:`Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
         beta tester for our app and kickstart your company. Apply for access below and I’ll be 
@@ -40,10 +40,10 @@ export const data = {
         ctaButton: `Apply for access`
     },
     footer:{
-        logoImgDark: 'dist/images/logo-dark.svg',
-        fbImage:'dist/images/icon-facebook.svg',
-        fbInsta:'dist/images/icon-instagram.svg',
-        fbTwitter:'dist/images/icon-twitter.svg',
+        logoImgDark: './images/logo-dark.svg',
+        fbImage:'./images/icon-facebook.svg',
+        fbInsta:'.images/icon-instagram.svg',
+        fbTwitter:'./images/icon-twitter.svg',
     } 
 
 
