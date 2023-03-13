@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.applyBtn{
+    @include button-bottom-border(transparent, white, 1rem, 0, 2px solid $light-green);
+    line-height: 2rem;
+    @include for-tablet{
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,76 @@
+@import '../../App.scss';
+
+
+.perksContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: calc(155/16) + rem 1rem 2rem !important;
+    text-align: center;
+    gap:2.5rem;
+    background-color: $ghost-white;
+    z-index: -1;
+    
+    .perk{
+         .perkNumberContainer{
+            width: 48px;
+            height: 48px;
+            border: 1px solid $davy-grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-family: $font-fam-heading;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        } 
+        .perkDetails{
+            .perkTitle{
+                font-family: $font-fam-heading;
+                font-size:calc(28/16) + rem;
+                color:$dark-purple;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+        } 
+    }
+
+    @include for-tablet{
+        padding-top: calc(203/16) + rem !important;
+        padding-bottom: calc(103/16) + rem !important;
+        justify-items: center;
+        .perk{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: calc(573/16) + rem;
+            gap:2rem;
+            text-align: left;
+            .perkDetails{
+                max-width: 493px;
+            }
+        }
+    }
+    @include for-desktop{
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: calc(255/16) + rem !important;
+        padding-bottom: calc(155/16) + rem !important;
+        .perk{
+            flex-direction: column;
+            text-align: center;
+            justify-content: flex-start ;
+        }
+    }
+}
+
+.perksContainer::after {
+    content: "";
+    display: block;
+    border-radius: 0 0 100% 100%;
+    position: absolute;
+    bottom:-35px;
+    width: 100%;
+    height: 50px;
+    background: $ghost-white;
+}

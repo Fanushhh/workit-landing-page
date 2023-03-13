@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:calc(58/16) + rem;
+    padding: calc(64/16) + rem 0;
+    .socialsContainer{
+        display: flex;
+        gap:1.8rem;
+    }
+}

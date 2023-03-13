@@ -1,15 +1,20 @@
-import './App.css';
-
-
-
+import './App.scss';
+import Navbar from './components/navbar/navbar';
+import { data } from './data';
+import Hero from './components/Hero/hero';
+import Perks from './components/Perks/perks';
+import Cta from './components/Cta/cta';
+import Footer from './components/footer/footer';
 
 function App() {
- 
 
   return (
-    <div className="App">
-      <h1>This is a new Frontend project</h1>
-    </div>
+    <main className="app">
+      <Hero props={data}/>
+      <Perks props={data.perks}/>
+      <Cta props={data.cta}/>
+      <Footer props={data.footer} />
+    </main>
   )
 }
 

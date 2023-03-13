@@ -1,0 +1,97 @@
+@import '../../App.scss';
+.cta{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20.5rem;
+    .founderImgContainer{
+        position: relative;
+       .founderImg{
+            max-width: 281px;
+            position: absolute;
+            top:-250px;
+            left:0;
+            margin-left: calc(-281/2/16) + rem;
+            z-index: -1;
+       } 
+       .bgPattern{
+        display: none;
+       }
+    }
+    .ctaDetails{
+        background-color: $dark-purple;
+        color:$white;
+        padding: 2rem;
+        h2{
+            font-size: 2rem;
+            font-family: $font-fam-heading;
+            padding-bottom: 1rem;
+        }
+        p{
+            padding-bottom: 1.5rem;
+            
+        }
+        button{
+            @include primary-button($light-green, black,1rem, .75rem 1.5rem, 2px solid transparent);
+            font-weight: 700;
+        }
+    }
+
+    @include for-tablet{
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        .founderImgContainer{
+            position: static;
+            background: url('dist/images/bg-pattern-3.svg');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 173px;
+            
+            .founderImg{
+                top:180px;
+                margin-left: 2.5rem;
+            }
+            .bgPattern{
+                display: block;
+                position: absolute;
+                right:40px;
+                bottom: -70px;
+            }
+        }
+        .ctaDetails{
+            max-width: 514px;
+        }
+    }
+
+    @include for-desktop{
+
+        .founderImgContainer{
+            .founderImg{
+                max-width: 477px;
+                top:150px;
+                left:120px;
+            }
+        }
+        .ctaDetails{
+            max-width: 730px;
+            padding: calc(64/16) + rem;
+            h2{
+                font-size: $size-M;
+                line-height: $line-height-M;
+                padding-bottom: 2rem;
+            }
+            p{
+                font-size: 1.125rem;
+                padding-bottom: 2rem;
+                line-height: 2rem;
+            }
+            button{
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+
+}

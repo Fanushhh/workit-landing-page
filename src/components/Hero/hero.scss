@@ -1,0 +1,115 @@
+@import '../../App.scss';
+
+.heroSection{
+    background-color: $dark-purple;
+    position: relative;
+    text-align: center;
+    color:$white;
+    padding-bottom: calc(130/16) + rem;
+    .heroSectionHeading{    
+        h1{
+           font-size: calc(50/16) + rem;
+           line-height:calc(50/16) + rem;
+           font-family: $font-fam-heading;
+           font-weight: 700;
+           padding: 2.5rem 0;
+        }
+        button{
+            @include primary-button($light-green, black,1rem,.75rem 1.5rem, 2px solid transparent);
+            font-weight: 700;  
+            @include for-tablet{
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .heroSectionImg{
+        position: absolute;
+        z-index: 3;
+        max-width: 320px; 
+        bottom: -130px;
+        left:50%;
+        margin-left: -10rem;
+    }   
+    @include for-tablet{
+        
+        padding-bottom: calc(208/16) + rem;
+        .heroSectionHeading{
+            max-width: 35.81rem;
+            margin: 0 auto;
+            h1{
+                font-size: calc(60/16) + rem;
+                padding: 2.5rem 3rem;
+            }
+        }
+        .heroSectionHeading::after{
+            content:'';
+            background: url('dist/images/bg-pattern-1.svg');
+            background-repeat: no-repeat;
+            background-size: 270px;
+            background-position: center left -180px;
+            display: block;
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            left:0;
+            top:90px;
+        }
+        .heroSectionHeading::before{
+            content:'';
+            background: url('dist/images/bg-pattern-2.svg');
+            background-repeat: no-repeat;
+            background-size: 141px;
+            background-position: center right -75px;
+            display: block;
+            position: absolute;
+            width: 141px;
+            height: 141px;
+            right:0;
+            bottom:50px;
+        }
+        .heroSectionImg{
+            max-width: 514px; 
+            margin-left: -16.06rem;
+            bottom: -180px;
+        }
+        
+    }
+    @include for-desktop{
+        padding-bottom: calc(306/16) + rem;
+        .heroSectionHeading{
+            max-width: 39.68rem;
+            h1{
+                font-size: $size-L;
+                line-height: $line-height-L;
+                font-weight: 600;
+            }
+        }
+        .heroSectionHeading::after{
+            background-position:center left -110px;
+            background-size: 300px;
+            top:150px;
+        }
+        .heroSectionHeading::before{
+            background-position: center right -40px;
+            bottom: 200px;
+        }
+        .heroSectionImg{
+            max-width: 767px;
+            margin-left: -23.96rem;
+            bottom:-210px;          
+        }
+    }
+}
+
+.heroSection::after {
+    content: "";
+    display: block;
+    border-radius: 0 0 100% 100%;
+    position: absolute;
+    bottom:-35px;
+    width: 100%;
+    height: 50px;
+    background: $dark-purple;
+}
+

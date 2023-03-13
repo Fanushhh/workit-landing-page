@@ -1,0 +1,17 @@
+@import './styles/mixins';
+@import './styles/variables';
+
+body{
+    font-family: $font-fam-body;
+    
+}
+.container{
+    padding:2rem 1rem;
+    @include for-tablet{
+        padding:2rem 2.5rem;
+    }
+    @include for-desktop{
+        padding: 3.56rem 10.31rem;
+        
+    }
+}

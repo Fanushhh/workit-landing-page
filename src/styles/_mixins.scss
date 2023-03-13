@@ -1,0 +1,43 @@
+@mixin for-tablet{
+    @media screen and (min-width:700px) {
+        @content;
+    }
+}
+
+@mixin for-desktop{
+    @media screen and (min-width:1000px) {
+        @content;
+    }
+}
+
+@mixin primary-button($background-color, $color,$font-size, $padding, $border){
+    background-color: $background-color;
+    font-size: $font-size;
+    color:$color;
+    padding: $padding;
+    border: $border;
+    transition: .2s ease-in-out;
+    &:hover{
+        background-color: transparent;
+        border: 2px solid $light-green;
+        cursor: pointer;
+        color:$light-green;
+    }
+    
+}
+
+
+@mixin button-bottom-border($background-color, $color,$font-size, $padding, $border){
+    background-color: $background-color;
+    font-size: $font-size;
+    color:$color;
+    padding: $padding;
+    border: none;
+    border-bottom: $border;
+    transition: .2s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        color:$light-green;
+    }
+}
+
