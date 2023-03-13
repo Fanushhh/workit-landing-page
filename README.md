@@ -44,7 +44,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 
 ## Author
-- Website - [My portfolio](https://www.your-site.com)
+- Website - [My portfolio](fanushhh.github.io/Fanush-s-Portfolio/)
 - Frontend Mentor - [@Fanushhh](https://www.frontendmentor.io/profile/Fanushhh)
 
 
