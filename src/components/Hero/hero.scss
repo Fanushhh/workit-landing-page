@@ -44,7 +44,7 @@
         }
         .heroSectionHeading::after{
             content:'';
-            background: url('./images/bg-pattern-1.svg');
+            background: url('/public/images/bg-pattern-1.svg');
             background-repeat: no-repeat;
             background-size: 270px;
             background-position: center left -180px;
@@ -57,7 +57,7 @@
         }
         .heroSectionHeading::before{
             content:'';
-            background: url('./images/bg-pattern-2.svg');
+            background: url('/public/images/bg-pattern-2.svg');
             background-repeat: no-repeat;
             background-size: 141px;
             background-position: center right -75px;
